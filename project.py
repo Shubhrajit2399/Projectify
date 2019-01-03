@@ -7,9 +7,13 @@ template_string="""<!DOCTYPE html>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        body{background-color: #FAFAFA;}
-        body a {text-decoration: none; color: #73C4EE;padding-left:1rem; padding-top:10px; padding-right:5px;padding-bottom:10px; }
-    </style>
+         body{font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 0.8rem;}
+        body a {
+            display:block;text-decoration: none; color: #7FC4EE;
+            padding: 10px 10px 10px 30px;
+            border:thin solid #F37726;
+            
+        }</style>
 </head>
 <body>"""
 dirs = os.listdir()

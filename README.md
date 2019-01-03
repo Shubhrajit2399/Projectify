@@ -7,4 +7,5 @@ A simple yet useful Application written in Python3 , it will change your Tutoria
     python3 project.py
     
 # Warning
-    Currently Only for Windows OS.
+    Run with python3
+    

@@ -1,4 +1,6 @@
 import os
+
+# a template string.. could'be improved
 template_string="""<!DOCTYPE html>
  <html lang="en">
 <head>
@@ -9,24 +11,30 @@ template_string="""<!DOCTYPE html>
     <style>
          body{font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 0.8rem;}
         body a {
-            display:block;text-decoration: none; color: #7FC4EE;
+            display:block;text-decoration: none; color: #000;
             padding: 10px 10px 10px 30px;
-            border:thin solid #F37726;
-            
-        }</style>
+            border:thin dashed #F37726;
+            }
+    </style>
 </head>
-<body>"""
+<body>
+"""
 dirs = os.listdir()
+
+# filtering the directories only
 
 dirs = list(filter((lambda m: len(m.split('.'))==1),dirs))
 file = open('index.html',"wt")
 file.write(template_string)
+
+# creating links
 folders  = list(map((lambda i:"""<a href = '{0}/index.html'>{1}</a><br>""".format(i,i[3:])),dirs))
 
 for i in folders:
     file.write(i)
     
     
+# function which creates all the index files on sub-directories
 
 def create_index(path):
     os.chdir(path)

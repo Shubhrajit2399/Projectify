@@ -1,6 +1,6 @@
 import os
 template_string="""<!DOCTYPE html>
-<html lang="en">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@ template_string="""<!DOCTYPE html>
     <title>Document</title>
     <style>
         body{background-color: #FAFAFA;}
-        body a {text-decoration: none; color: #7FC4EE;padding-left:1rem; padding-top:10px; padding-right:5px;padding-bottom:10px; }
+        body a {text-decoration: none; color: #73C4EE;padding-left:1rem; padding-top:10px; padding-right:5px;padding-bottom:10px; }
     </style>
 </head>
 <body>"""

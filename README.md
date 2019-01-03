@@ -5,6 +5,7 @@ A simple yet useful Application written in Python3 , it will change your Tutoria
     Go to the base directory
     run:
     python3 project.py
+    (a 'index.html' file will be created on your directory)
     open index.html into your web browser
     
 # Warning
